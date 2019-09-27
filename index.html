@@ -7,7 +7,7 @@
 <body>
   <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
     <fieldset>
-      <legend><h1>Volunteer Form</h1></legend>
+      <legend>Volunteer Form</legend>
       <h3>My Info</h3>
 
       <p>
@@ -18,7 +18,7 @@
       </p>
       <p>
         <label for="phone">Phone Number: </label>
-        <input type="tel" id="phone_field" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input type="tel" id="phone" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
       </p>
       <p>
         <label>Email Address: <input type="email" name="email_field"></label>
@@ -45,7 +45,7 @@
     </fieldset>
 
     <fieldset>
-      <legend><h1>My Availability</h1></legend>
+      <legend>My Availability</legend>
       <p>Days Available:</p>
       <input type="checkbox" name="available_field[]" value="Sunday"> Sunday
       <input type="checkbox" name="available_field[]" value="Monday"> Monday
@@ -61,5 +61,6 @@
       </div>
       <input type="hidden" name="hidden_field" value="apatton1@hawk.iit.edu">
     </fieldset>
+  </form>
 </body>
 </html>
