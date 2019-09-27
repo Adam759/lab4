@@ -23,8 +23,43 @@
       <p>
         <label>Email Address: <input type="email" name="email_field"></label>
       </p>
+      <p>
+        <label>Gender: </label>
+        <input type="radio" name="gender_field" value="Male">
+        <label>Male</label>
+        <input type="radio" name="gender_field" value="Female">
+        <label>Female</label>
+      </p>
+      <p>
+        <label>Age: </label>
+        <select name="age_field">
+          <option value="0-17">Under 18</option>
+          <option value="18-24">18 - 24</option>
+          <option value="25-34">25 - 34</option>
+          <option value="35-44">35 - 44</option>
+          <option value="45-54">45 - 54</option>
+          <option value="55-64">55 - 64</option>
+          <option value="65">65 Or Older</option>
+          </select>
+        </p>
+    </fieldset>
 
-
+    <fieldset>
+      <legend><h1>My Availability</h1></legend>
+      <p>Days Available:</p>
+      <input type="checkbox" name="available_field[]" value="Sunday"> Sunday
+      <input type="checkbox" name="available_field[]" value="Monday"> Monday
+      <input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday
+      <input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday
+      <input type="checkbox" name="available_field[]" value="Thursday"> Thursday
+      <input type="checkbox" name="available_field[]" value="Friday"> Friday
+      <input type="checkbox" name="available_field[]" value="Saturday"> Saturday
+      <p>Any Comments?</p>
+      <textarea name="comments_field" placeholder="Place any comments in here..." rows="10" cols="60"></textarea>
+      <div>
+      <input type="submit" value="Submit">
+      </div>
+      <input type="hidden" name="hidden_field" value="apatton1@hawk.iit.edu">
     </fieldset>
 </body>
 </html>
