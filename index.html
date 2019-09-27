@@ -7,7 +7,24 @@
 <body>
   <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
     <fieldset>
-      <legend>Volunteer Form</legend>
+      <legend><h1>Volunteer Form</h1></legend>
+      <h3>My Info</h3>
+
+      <p>
+        <label>First Name: <input type="text" name="first_name_field"></label>
+      </p>
+      <div>
+        <label>Last Name: <input type="text" name="last_name_field"></label>
+      </div>
+      <div>
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone_field" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </div>
+      <div>
+        <label>Email Address: <input type="email" name="email_field"></label>
+      </div>
+
+
     </fieldset>
 </body>
 </html>
